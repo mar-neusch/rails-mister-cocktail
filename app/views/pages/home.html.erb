@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <h1>Welcome to Mister cocktail application</h1>
+  <div class="cards mt-5 flex-grow-1">
+    <% @cocktails.each do |cocktails| %>
+      <%= link_to cocktails_path(cocktails) do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktails.banner_picture_url %>)">
+          <%= cocktails.name %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
