@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <h1>Welcome to Mister cocktail application</h1>
 
-  <%= link_to "Create a Cocktail", new_cocktail_path %>
+  <%= link_to "Create a Cocktail", new_cocktail_path, class: "btn btn-ghost" %>
 
   <div class="cards mt-5 flex-grow-1">
     <% @cocktails.each do |cocktail| %>

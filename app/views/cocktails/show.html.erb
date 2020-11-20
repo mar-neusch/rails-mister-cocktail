@@ -8,4 +8,4 @@
     <%= link_to "Delete dose", dose_path(dose), method: :delete, data: { confirm: "are u sure?"} %>
   <% end %>
 </ul>
- <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+ <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-ghost" %>
